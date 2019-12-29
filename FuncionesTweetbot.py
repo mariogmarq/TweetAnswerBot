@@ -5,8 +5,8 @@ import re
 #TWEEPY DEPENDENCIES
 ############################################################################################################
 # Authentication
-auth = tweepy.OAuthHandler("0pPn5c6FWi7NADPD2xlTyZkgG", "woMHm342iIew2U76X04akH0Z0mpcSsOTRjbna7KAA7N5ZRwBqp")
-auth.set_access_token("1189652909316808705-XjEL4BIkdEBNyXGTXqYiwdUB2A7wXx", "ZjFWZii2szc1jGYH06hne9LOleIZIa1kHpI8NNC50SoUH")
+auth = tweepy.OAuthHandler(consumer_token, consumer_secret)
+auth.set_access_token(key, secret)
 
 # Api object
 api = tweepy.API(auth)
