@@ -6,7 +6,7 @@ Twitter bot that answer people with random messages and people can add messages 
 
 ## Requirement
 
-The bot requires tweepy 3.8.0 to work, aside from a two text files of your choice and the FuncionesTweetbot.py file.
+The bot requires tweepy 3.8.0 to work, aside from a two text files of your choice and the FuncionesTweetbot.py file. **You need to put your twitter developer keys in the FuncionesTweetbot.py file in the tweepy dependencies part**
 
 ## How does it works
 
