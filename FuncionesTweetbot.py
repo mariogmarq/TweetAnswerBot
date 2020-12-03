@@ -45,11 +45,7 @@ def AddAnswer(textfile):
     f = open(textfile, "r")
     array = []
     for line in f:
-        phrase = ""
-        for x in line:
-            if x != "\n":
-                phrase = phrase + x
-        phrase = phrase + " "
+        phrase = line.split('\n')[0] + " "
         array.append(phrase)
     f.close()
     return array
@@ -76,7 +72,7 @@ def NewTweet(User):
 def InFile(text, textfile):
     lecture = open(textfile, "r")
     for line in lecture:
-        if re.findall(str(text), str(line)):
+        if line == text:
             return True
     return False
 
