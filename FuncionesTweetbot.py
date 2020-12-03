@@ -31,20 +31,10 @@ def UserList(textfile):
     userArray = []
     file = open(textfile, "r")
     for line in file:
-        name = ""
-        screenn = ""
-        Ident = ""
-        i = 0
-        for x in line:
-            if x != '\n':
-                if x == " ":
-                    i = i + 1
-                elif i == 0:
-                    name = name + x
-                elif i == 1:
-                    screenn = screenn + x
-                elif i == 2:
-                    Ident = Ident + x
+        fields = line.split(" ")
+        name = fields[0]
+        screenn = fields[1]
+        Ident = fields[2]
         User = User(name, screenn, Ident) 
         userArray.append(User)
     file.close()
